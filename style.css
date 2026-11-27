@@ -512,3 +512,14 @@ footer {
         display: none;
     }
 }
+.dl-note {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.78rem;
+    color: #64748b;
+}
+
+.dl-note a {
+    color: #2563eb;
+    text-decoration: underline;
+}
