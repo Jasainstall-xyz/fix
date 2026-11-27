@@ -36,8 +36,8 @@ function getBotResponse(userText) {
         return "Ada dong! Kami punya lengkap keluarga <b>Adobe Master Collection</b> (Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom, dll) untuk Windows 10 & 11. Langsung chat WhatsApp untuk cek kecocokan spek laptopmu ya!";
     }
 else if (text.includes('download') || text.includes('teamviewer') || text.includes('edge') || text.includes('install')) {
-        return "Di browser Microsoft Edge ini, ikuti langkah berikut:<br>1. Klik tombol biru <b>'Download TeamViewer Host (.exe)'</b>.<br>2. Buka file hasil unduhan di pojok kanan atas browser, lalu klik <b>Yes</b>.<br>3. Klik <b>Accept - next</b> dan tunggu instalasi selesai.<br>4. Setelah jendela TeamViewer terbuka, foto <b>ID & Kata Sandi</b> lalu kirim ke WA admin.";
-    } 
+        return "Di browser Microsoft Edge ini, ikuti langkah berikut:<br>1. Klik tombol biru <b>'Download TeamViewer Host (.exe)'</b>.<br>2. Jika Google Drive menampilkan halaman <i>'Tidak dapat memindai file dari virus'</i>, langsung klik tombol <b>Tetap download (Download anyway)</b>.<br>3. Buka file hasil unduhan di pojok kanan atas browser, klik <b>Yes</b>, lalu klik <b>Accept - next</b>.<br>4. Setelah jendela TeamViewer terbuka, foto <b>ID & Kata Sandi</b> lalu kirim ke WA admin.";
+    }
     else if (text.includes('id') || text.includes('password') || text.includes('sandi')) {
         return "Setelah proses instalasi TeamViewer Host selesai, aplikasi akan otomatis terbuka dan menampilkan kotak bertuliskan <b>'ID Anda'</b> (angka 9–10 digit) beserta <b>'Kata Sandi'</b> di bawahnya. Foto layar tersebut dan kirim ke WhatsApp admin (0895-2223-8269) ya!";
     }
