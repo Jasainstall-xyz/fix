@@ -108,9 +108,8 @@ function getBotReply(input) {
         return "Ikuti langkah berikut di browser:<br>1. Klik tombol biru <b>'Download TeamViewer Host (.exe)'</b>.<br>2. Jika Google Drive menampilkan halaman <i>'Tidak dapat memindai file dari virus'</i>, klik <b>Tetap download</b>.<br>3. Buka file di menu Downloads pojok kanan atas browser, klik <b>Yes</b>, lalu klik <b>Accept - next</b>.<br>4. Setelah jendela TeamViewer terbuka, foto <b>ID & Kata Sandi</b> lalu kirim ke WA admin.";
     } else if (text.includes('id') || text.includes('password') || text.includes('sandi')) {
         return "Setelah instalasi TeamViewer Host selesai, aplikasi akan otomatis terbuka dan menampilkan <b>'ID Anda'</b> (9–10 digit) serta <b>'Kata Sandi'</b>. Foto layar tersebut dan kirim ke WhatsApp admin (0895-2223-8269).";
-    } else if (text.includes('harga') || text.includes('biaya') || text.includes('paket')) {
-        return "Paket kami mulai dari <b>Rp 50.000</b> (Office & Standar), <b>Rp 100.000</b> (Paket Lengkap + Aktivasi), hingga <b>Rp 150.000</b> (Install Ulang / Aplikasi Berat). Silakan klik tombol <b>Pilih Paket Ini</b> di bagian Layanan.";
-    } else if (text.includes('aman') || text.includes('privasi')) {
+    } else if (text.includes('harga') || text.includes('biaya') || text.includes('paket') || text.includes('bundle')) {
+        return "Kami menyediakan 2 pilihan paket bundle:<br>• <b>Bundle Hemat (Rp 60.000)</b>: Aktivasi Windows, Office, & aplikasi standar.<br>• <b>Bundle Komplit (Rp 70.000)</b>: Semua fitur 60K + bonus aplikasi pilihan & optimasi penuh.<br>Silakan klik tombol <b>Pilih Bundle</b> di bagian Layanan ya!";
         return "100% aman! Anda bisa melihat langsung kursor teknisi bekerja di layar Anda secara live, dan setelah selesai akses remote otomatis terputus begitu aplikasi ditutup.";
     } else {
         return "Untuk konsultasi spesifik atau kirim foto ID TeamViewer, silakan langsung isi formulir di halaman ini atau hubungi WhatsApp admin di <b>0895-2223-8269</b>.";
