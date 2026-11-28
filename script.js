@@ -83,3 +83,41 @@ sendBtn.addEventListener('click', handleUserSend);
 inputField.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') handleUserSend();
 });
+
+// Menghilangkan tanda pagar (#) di URL saat klik navigasi atau tombol
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        
+        // Jika hanya href="#" kosong (misal tombol yang memicu modal/chat), cegah loncat ke atas & hapus #
+        if (targetId === '#') {
+            e.preventDefault();
+            window.history.replaceState(null, null, window.location.pathname + window.location.search);
+            return;
+        }
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            e.preventDefault(); // Mencegah browser menambahkan #id ke URL
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            // Pastikan URL tetap bersih tanpa #
+            window.history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
+    });
+});
+
+// Bersihkan jika ada pengunjung yang membuka link dengan # dari luar
+window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+        window.history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
+});
